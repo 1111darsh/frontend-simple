@@ -27,11 +27,11 @@
 
     function setBaseUrl() {
       var baseUrl = document.getElementById('baseUrl').value;
-      const baseURL = baseUrl
+      baseURL = baseUrl
       console.log("Base URL set to:", baseURL);
       getTasks()
+      document.getElementById('baseURLBlock').style.display = 'none';
     }
-       
         async function getTasks() {
             try {
                 console.log(baseURL);
