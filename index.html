@@ -23,7 +23,8 @@
 
     <script>
         
-        const baseURL = 'http://localhost:8080/tasks';
+        baseURL = process.env.BASE_URL || 'http://localhost:5000/tasks'; // Fetching baseURL from environment variable or using default value
+
         getTasks()
         async function getTasks() {
             try {
