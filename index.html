@@ -23,8 +23,7 @@
 
     <script>
         
-        baseURL = process.env.BASE_URL || 'http://localhost:5000/tasks'; // Fetching baseURL from environment variable or using default value
-
+        const baseURL = process.env.BASE_URL || 'backend:5000/tasks';
         getTasks()
         async function getTasks() {
             try {
