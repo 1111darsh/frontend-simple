@@ -27,17 +27,14 @@
 
     function setBaseUrl() {
       var baseUrl = document.getElementById('baseUrl').value;
-      console.log("Base URL set to:", baseUrl);
       const baseURL = baseUrl
-
-
-
+      console.log("Base URL set to:", baseURL);
+      getTasks()
     }
-        
-        const baseURL = 'http//loaclhost:5000/tasks';
-        getTasks()
+       
         async function getTasks() {
             try {
+                console.log(baseURL);
                 const response = await fetch(baseURL);
                
                 if (!response.ok) {
